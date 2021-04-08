@@ -120,6 +120,6 @@ class Formation
         return $this->id;
     }
 
-    
+
 
 }

@@ -27,10 +27,7 @@ class Media
      */
     private $reference;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=Reference::class, inversedBy="media")
-     */
-    private $relation;
+
 
     public function getId(): ?int
     {
@@ -57,18 +54,6 @@ class Media
     public function setReference(?Reference $reference): self
     {
         $this->reference = $reference;
-
-        return $this;
-    }
-
-    public function getRelation(): ?Reference
-    {
-        return $this->relation;
-    }
-
-    public function setRelation(?Reference $relation): self
-    {
-        $this->relation = $relation;
 
         return $this;
     }
